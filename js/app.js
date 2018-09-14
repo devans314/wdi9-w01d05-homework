@@ -82,12 +82,36 @@
 
 // If the age is younger than 16, a message should print "Sorry, you're too young."
 
-let age = 13;
-    if(age >= 16){
-        console.log("Here are the keys");
-    } else if (age < 16){
-        console.log("Sorry, you're too young.");
-    }
+// let age = 13;
+//     if(age >= 16){
+//         console.log("Here are the keys");
+//     } else if (age < 16){
+//         console.log("Sorry, you're too young.");
+//     }
+
+// A. The basics
+// Write a loop that will print out all the numbers from 0 to 10, inclusive.
+
+// Write a loop that will print out all the numbers from 10 up to and including 400.
+
+// Write a loop that will print out every third number starting with 12 and going no higher than 4000.
+
+
+
+
+
+
+// for(let i = 0; i <= 10; i++){
+//     console.log(i);
+// }
+
+// for(let i = 10; i <= 400; i++){
+//     console.log(i);
+// }
+
+for(let i = 12; i <= 4000; i += 3){
+    console.log(i);
+}
 
 
 
