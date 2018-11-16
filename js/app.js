@@ -89,17 +89,15 @@
 //         console.log("Sorry, you're too young.");
 //     }
 
+
+// #####LOOPS######
+
 // A. The basics
 // Write a loop that will print out all the numbers from 0 to 10, inclusive.
 
 // Write a loop that will print out all the numbers from 10 up to and including 400.
 
 // Write a loop that will print out every third number starting with 12 and going no higher than 4000.
-
-
-
-
-
 
 // for(let i = 0; i <= 10; i++){
 //     console.log(i);
@@ -122,6 +120,31 @@
 //     console.log(i + "<-- is an even number");
 // }
 
+// C. Give me Five
+// For the numbers 0 - 100, print out "I found a number. High five!" if the number is a multiple of five.
+// for( let i = 0; i <= 100; i++){
+//     if(i%5 === 0){
+//         console.log(`i found a ${i}. High Five!`);
+//     } if(i%3 === 0){
+//         console.log(`i found a ${i}. Three is a crowd`);
+//     }    
+// };
+
+// D. Savings account
+// Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
+// Check your work! Your banck_account should have $55 in it.
+
+// You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
+let bankAccount = 0;
+for(let i = 1; i <= 10; i++){
+    bankAccount+= i;
+}
+for(let i = 1; i <= 100; i++){
+    bankAccount+= 2*i;
+} 
+console.log(bankAccount);
+
+//######FUNCTIONS######
 // ### I. `transmogrify`
 
 // Write a Javascript function called `transmogrify`. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
@@ -185,32 +208,58 @@
   
 //   reverseWordOrder("Ishmael me Call");
 
-const reverseWordOrder = (str) => {
-    let word = '';
-    let arr = [];
-    let wordsReversed = '';
-    for(let i = 0; i < str.length; i++){
-        while(str[i] !== ' ' && i  < str.length){
-            word+=str[i];
-            i++;
-        } 
-        arr.push(word);
-        if(str[i] === ' '){
-            word = '';
-        }   
-    }
-    for( let i = 0; i < arr.length; i++){
-        wordsReversed += (`${arr[arr.length - (i+1)]} `);
-    }
-    return wordsReversed;
+// const reverseWordOrder = (str) => {
+//     let word = '';
+//     let arr = [];
+//     let wordsReversed = '';
+//     for(let i = 0; i < str.length; i++){
+//         while(str[i] !== ' ' && i  < str.length){
+//             word+=str[i];
+//             i++;
+//         } 
+//         arr.push(word);
+//         if(str[i] === ' '){
+//             word = '';
+//         }   
+//     }
+//     for( let i = 0; i < arr.length; i++){
+//         wordsReversed += (`${arr[arr.length - (i+1)]} `);
+//     }
+//     return wordsReversed;
+// }
+// console.log(reverseWordOrder("Ishmael me Call"));
+// console.log(reverseWordOrder("I use Lâncome on my comb"));
+
+// ### K. Get down and dirty with `Math.random()`
+
+// 1.  Write a function that will return a random integer between 1 and 10. Test it.
+// 2.  Write a function that will return a random integer between 10 and 100. Test it.
+// 3.  Write a function that will return a random number between 532 and 13267. Test it.
+// 4.  Write a function that will return a random number between 1 and 10. Test it.
+// 5.  Add a few more quotes to the quotes array from question III-B-1 above. Write a function that will take an array as a parameter, and return a random element from that array.  Call your function a few times, passing in the quotes array.  Give it a nice semantic name like `getRandomElement`.
+
+
+// const RandomIntOneToTen = () => {
+//     return Math.ceil(Math.random() * 10)
+// }
+// console.log(RandomIntOneToTen());
+
+// const RandomIntTenToOneHundred = () => {
+//     return Math.ceil(Math.random() * (90) + 10)
+// }
+// console.log(RandomIntTenToOneHundred());
+
+// const random532to13267 = () => {
+//     return  Math.random() * (12735) + 532;
+// }
+
+// console.log(random532to13267());
+
+const RandomNumOneToTen = () => {
+    return  Math.random() * (9) + 1;
 }
-console.log(reverseWordOrder("Ishmael me Call"));
-console.log(reverseWordOrder("I use Lâncome on my comb"));
 
-
-    
-       
-   
+console.log(RandomNumOneToTen());
 
 
 
