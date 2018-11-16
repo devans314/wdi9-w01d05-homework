@@ -109,10 +109,108 @@
 //     console.log(i);
 // }
 
-for(let i = 12; i <= 4000; i += 3){
-    console.log(i);
-}
+// for(let i = 12; i <= 4000; i += 3){
+//     console.log(i);
+// }
 
+// B. Get even
+// Print out the even numbers that are within the range of 1 - 100.
+
+// Adjust your code to add a message next to even numbers only that says: "<-- is an even number".
+
+// for(let i = 2; i <= 100; i += 2){
+//     console.log(i + "<-- is an even number");
+// }
+
+// ### I. `transmogrify`
+
+// Write a Javascript function called `transmogrify`. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
+
+// The transmogrified result of three numbers is the product of the first two numbers, raised to the power of the third number.
+
+// For example, the transmogrified result of 5, 3, and 2 is `(5 times 3) to the
+// power of 2` is 225.
+
+// ```javascript
+// console.log(transmogrify(5, 3, 2));
+// ```
+// > `=> 225`
+
+// const transmogrify = (num1, num2, num3) => {
+//     return Math.pow((num1 * num2), num3);
+//     }
+    
+//     console.log(transmogrify(5, 4, 2));
+
+
+// ### J. `reverseWordOrder` v2
+
+// **Without using `.split()`, `.reverse()`, or `.join()`,** write a function `reverseWordOrder` that accepts a single argument, a string. The function should return a string with the order of the words reversed. Don't worry about punctuation. 
+
+// See if you can do it without googling.
+
+// Remember: Jim showed you today that you can index directly into a string: 
+// ```js
+// "hello world"[6]
+// ```
+// > `=> "w"`
+
+// That and basic loops and variables and arrays are all you need to solve this without the Array methods.
+
+// ```javascript
+// console.log(reverseWordOrder("Ishmael me Call"));
+// ```
+// > `=> "Call me Ishmael"`
+
+// ```js
+// console.log(reverseWordOrder("I use Lâncome on my comb"));
+// ```
+// > `=> "comb my on Lâncome use I"`
+
+    
+// const reverseWordOrder = (string) => {
+//     let reversedWords = [];
+//     let reversedSentence = "";
+//     //loops through reversed words forwards and words backwards
+//     for (i = 0; i < words.length; i++){
+//       reversedWords.push(words[words.length - 1 - i] + " ");
+//     }
+//     console.log(reversedWords);
+//     //adds the words from reversed words to a string one at a time
+//     for (i = 0; i < reversedWords.length; i++){
+//       reversedSentence = reversedSentence + reversedWords[i];
+//     }
+//     console.log(reversedSentence);
+//   }
+  
+//   reverseWordOrder("Ishmael me Call");
+
+const reverseWordOrder = (str) => {
+    let word = '';
+    let arr = [];
+    let wordsReversed = '';
+    for(let i = 0; i < str.length; i++){
+        while(str[i] !== ' ' && i  < str.length){
+            word+=str[i];
+            i++;
+        } 
+        arr.push(word);
+        if(str[i] === ' '){
+            word = '';
+        }   
+    }
+    for( let i = 0; i < arr.length; i++){
+        wordsReversed += (`${arr[arr.length - (i+1)]} `);
+    }
+    return wordsReversed;
+}
+console.log(reverseWordOrder("Ishmael me Call"));
+console.log(reverseWordOrder("I use Lâncome on my comb"));
+
+
+    
+       
+   
 
 
 
