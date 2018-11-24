@@ -202,6 +202,32 @@
 // Add a new element, "Cloud City" to the array.
 // ourClass.push("Cloud City");
 
+// E. Mix It Up
+// Given the following array: 
+
+const myArray = [5, 10, 500, 20]
+
+// Add the string "Egon" to the end of the array. Add another string of your choice to the end of the array.
+
+// myArray.push('Egon', 'Jack');
+// console.log(myArray);
+
+// Remove the 5 from the beginning of the array.
+// Add the string "Bob Marley" to the beginning of the array.
+
+// myArray.splice(0,1, 'Bob Marley');
+// console.log(myArray);
+
+// Remove the string of your choise from the end of the array.
+
+// myArray.pop();
+// console.log(myArray);
+
+// Reverse this array using Array.prototype.reverse(). Did you mutate the array? What does mutate mean? Did the .reverse() method return anything?
+// myArray.reverse();
+// console.log(myArray);
+// returned the array with indexes numerically reversed
+// This method does mutate the array.  Mutate means changing or affecting a source element.
 //######FUNCTIONS######
 // ### I. `transmogrify`
 
