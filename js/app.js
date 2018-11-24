@@ -419,6 +419,25 @@
 // }
 // console.log(maxOfThree(6, 9, 1));
 
+// H. printLongestWord
+// Write a function printLongestWord that accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
+
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+// => "Peanutbutter"
+
+// const printLongestWord = (arr) => {
+//     let longestWord= '';
+//     let characterCount = 0;
+//     for( let i = 0; i < arr.length; i ++){
+//         if (arr[i].length > characterCount){
+//             longestWord = arr[i];
+//             characterCount = arr[i].length;
+//         }
+//     }
+//     return longestWord;
+// }
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+
 // // I. `transmogrify`
 
 // Write a Javascript function called `transmogrify`. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
