@@ -1,4 +1,5 @@
-// I. Variables & Datatypes
+// I.###### Variables & Datatypes #######
+
 // A. Q + A
 // How do we assign a value to a variable?
 // How do we change the value of a variable?
@@ -90,7 +91,7 @@
 //     }
 
 
-// #####LOOPS######
+// ##### LOOPS ######
 
 // A. The basics
 // Write a loop that will print out all the numbers from 0 to 10, inclusive.
@@ -155,7 +156,10 @@
 
 
 // I completed this earlier (as in literally tonight).
-//######ARRAYS AND CONTROL FLOW #######
+
+
+//###### ARRAYS AND CONTROL FLOW #######
+
 // A. Talk about it:
 // What are the things in an array called?
 
@@ -325,7 +329,7 @@
 
 // thomsCloset[1][2]= "footie pajamas";
 
-//######FUNCTIONS######
+//###### FUNCTIONS ######
 // A. printGreeting
 // Do you think you could write a function called printGreeting with a parameter name that returns a greeting with the argument interpolated into the greeting?
 
@@ -554,9 +558,34 @@
 
 // console.log(RandomNumOneToTen());
 
+// const getRandomElement = (arr) => {
+//     return  arr[Math.floor(Math.random() * arr.length)];
+// }
+
+// console.log(getRandomElement(['hello', 'I', 'like', 'web', 'development']));
+
+//#####Objects#####
+// Let's set up an object data structure. Let's say we have a website that sells products, and we have a user of our website, and we want to store that user's data. The object data structure is a good way to organize the data from our user.
+
+// A. Make a user object
+// Create an object called user.
+// Write in to the object the key-value pairs for name, email, age, and purchased. Set the value of purchased to an empty array []. Set the other values to whatever you would like.
 
 
+const user = {
+    name: 'Mike Tyson',
+    email: 'tyson.nithe.com',
+    age: 45,
+    purchased: [],
+};
 
+user.email = 'that.nithe.com'
+user.age++
+user.location = 'Colorado'
+user.purchased.push('Carbohydrates');
+user.purchased.push('peace of mind');
+user.purchased.push('Merino jodhpers');
+console.log(user.purchased[2]);
 
 
 
