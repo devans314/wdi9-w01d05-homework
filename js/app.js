@@ -349,6 +349,17 @@
 // }
 // printCool('captain reynolds')
 
+// C. calculateCube
+// Write a function calculateCube that takes a single number and prints the volume of a cube made from that number.
+
+// console.log(calculateCube(5));
+// => 125
+
+// const calculateCube = (num) => {
+//     console.log(Math.pow(num, 3));
+// }
+// console.log(calculateCube(5));
+
 // // I. `transmogrify`
 
 // Write a Javascript function called `transmogrify`. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
