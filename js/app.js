@@ -374,6 +374,19 @@
 //         }    
 // console.log(isVowel('a'));
 
+// E. getTwoLengths
+// Write a function getTwoLengths that accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
+
+// console.log(getTwoLengths("Hank", "Hippopopalous"));
+// => [4, 13]
+
+// const getTwoLengths = (str1, str2) => {
+//     const arr = [];
+//     arr.push(str1.length);
+//     arr.push(str2.length);
+//     return arr;
+// }
+// console.log(getTwoLengths('ham', 'turkey'))
 // // I. `transmogrify`
 
 // Write a Javascript function called `transmogrify`. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
