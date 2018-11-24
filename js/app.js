@@ -360,6 +360,20 @@
 // }
 // console.log(calculateCube(5));
 
+// D. isVowel
+// Write a function isVowel that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case.
+
+// console.log(isVowel("a"));
+// => true
+
+// const isVowel = (vowel) => {
+//     if (vowel === 'a'||'e'||'i'||'o'||'u'||'A'||'E'||'I'||'O'||'U'){
+//                 return true;
+//            }
+//            return false;
+//         }    
+// console.log(isVowel('a'));
+
 // // I. `transmogrify`
 
 // Write a Javascript function called `transmogrify`. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
