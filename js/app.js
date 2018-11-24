@@ -402,6 +402,23 @@
 //     }
 // console.log(getMultipleLengths(["hello", "world", "how", "are", "you"]));
 
+// G. maxOfThree
+// Define a function maxOfThree that takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned.
+
+// console.log(maxOfThree(6, 9, 1));
+// => 9
+
+// const maxOfThree = (num1, num2, num3) => {
+//     let biggest = num1;
+//     if(num2 > biggest){
+//         biggest = num2;
+//     } if (num3 > biggest){
+//         biggest = num3;
+//     }
+//     return biggest;
+// }
+// console.log(maxOfThree(6, 9, 1));
+
 // // I. `transmogrify`
 
 // Write a Javascript function called `transmogrify`. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
