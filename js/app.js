@@ -155,6 +155,28 @@
 
 
 // I completed this earlier (as in literally tonight).
+//######ARRAYS AND CONTROL FLOW #######
+// A. Talk about it:
+// What are the things in an array called?
+
+// Arrays contain values at indexes
+
+// Do Arrays guarantee those things will be in order?
+
+// No, arrays don't guarantee the order of their values.
+
+// What real-life thing could you model with an array?
+
+// A list of groceries (as long as they don't need to be in order)
+
+// B. Easy Does It
+// Create an array that contains three quotes and store it in a variable called quotes.
+
+// const quotes = [
+//     "get busy livin' or get busy dying",
+//     "The tree that doesn't bend, breaks.  Bend too much and you're already broken.",
+//     "One good thing about music is that when it hits you, you feel no pain"
+// ]
 
 //######FUNCTIONS######
 // ### I. `transmogrify`
@@ -267,11 +289,11 @@
 
 // console.log(random532to13267());
 
-const RandomNumOneToTen = () => {
-    return  Math.random() * (9) + 1;
-}
+// const RandomNumOneToTen = () => {
+//     return  Math.random() * (9) + 1;
+// }
 
-console.log(RandomNumOneToTen());
+// console.log(RandomNumOneToTen());
 
 
 
