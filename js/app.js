@@ -205,7 +205,7 @@
 // E. Mix It Up
 // Given the following array: 
 
-const myArray = [5, 10, 500, 20]
+// const myArray = [5, 10, 500, 20]
 
 // Add the string "Egon" to the end of the array. Add another string of your choice to the end of the array.
 
@@ -228,6 +228,21 @@ const myArray = [5, 10, 500, 20]
 // console.log(myArray);
 // returned the array with indexes numerically reversed
 // This method does mutate the array.  Mutate means changing or affecting a source element.
+
+// F. Biggie Smalls
+// Create a variable that contains an integer.
+
+// Write an if ... else statement that:
+
+// console.log()s "little number" if the number is entered is less than 100
+
+// console.log()s big number if the number is greater than or equal to 100.
+
+// let integer = 1;
+// if(integer < 100){
+//     console.log('little number')
+// } else {console.log('big number')}
+
 //######FUNCTIONS######
 // ### I. `transmogrify`
 
